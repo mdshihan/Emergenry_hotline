@@ -8,13 +8,10 @@ for(const heartcnt of heartCount ){
     })
 }
 
-// const heartCount = document.getElementsByClassName("heart-icon");
-// const hrtCntElement = document.getElementById('hrt-count');
-
-// for (const heart of heartCount) {
-//     heart.addEventListener('click', function() {
-//         let currentCount = parseInt(hrtCntElement.innerText);
-//         currentCount += 1;
-//         hrtCntElement.innerText = currentCount;
-//     });
-// }
+const clickCall= document.getElementsByClassName("call-btn")
+for(const call of clickCall){
+    call.addEventListener('click', function(e){
+        e.preventDefault();
+        alert("")
+    })
+}
