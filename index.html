@@ -12,7 +12,12 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- font awsome cdn  -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+      <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+/>
+
   </head>
   <body class=" bg-[#f5fff6]">
     <!-- nav bar -->
@@ -46,7 +51,7 @@
         </div>
      </section>
      <!-- main section  -->
-      <main class="mx-[62px] mt-2  flex justify-between">
+      <main class="mx-[62px] mt-2 flex flex-col md:flex-row  justify-between   ">
         <!-- card  -->
          <div class="grid md:grid-cols-3 sm:grid-cols-1 gap-5">
             <div class="sm:max-h-[370px] max-w-[300px] p-[30px]  bg-white rounded-xl shadow-md">
@@ -213,8 +218,8 @@
         </div>
          </div>
         <!-- call history  -->
-        <div id="historyId" class="w-[400px] h-auto  bg-white ">
-            <div class="flex justify-between m-4">
+        <div id="historyId" class=" max-w[400px] md:w-[400px] h-auto mt-2 bg-white ">
+            <div class="flex justify-between  m-4">
                 <div class="flex items-center gap-2">
                     <i class="fa-solid fa-clock "></i>
                     <p>Call History</p>
@@ -222,6 +227,7 @@
                     <button id="clear-btn" class="btn btn-success rounded-full p-3 bg-[#00a63e] text-white "><i class="fa-solid fa-phone"></i>Clear</button>  
             </div>
         <div id="add-history">
+        </div>
         </div>
       </main>
       <script src="script.js"></script>
