@@ -64,8 +64,12 @@ const copyBtn = document.getElementsByClassName("copy-btn")
 for(const btn of copyBtn){
   btn.addEventListener('click',function(){
     let count= parseInt(copyCnt.innerText)
+    const card = btn.closest("div.bg-white");
     count+=1;
     copyCnt.innerText = count;
-    alert("Number has coppyed")
+    const numberCopy = document.getElementById("number-copy").innerText
+     navigator.clipboard.writeText(numberCopy).then(() => {
+      alert("Number copied " + numberCopy);
   })
 }
+  )}
