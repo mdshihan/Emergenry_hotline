@@ -1,3 +1,5 @@
+
+
 const heartCount = document.getElementsByClassName("heart-icon");
 const hrtCnt=document.getElementById('hrt-count')
 for(const heartcnt of heartCount ){
@@ -28,8 +30,12 @@ for (const btn of callButtons) {
 
     alert(` Calling ${serviceName} ${serviceNumber}`);
     let afterCallBalance = available-20;
-    callRate.innerText= afterCallBalance
+    callRate.innerText= afterCallBalance;
+    const newElemnt = document.createElement("div")
+
+    newElemnt.innerHTML = `
+    
+    `
+
   });
 }
-
-
