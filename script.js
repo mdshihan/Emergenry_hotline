@@ -1,4 +1,4 @@
-
+  const cleanHis= document.getElementById("add-history");
 
 const heartCount = document.getElementsByClassName("heart-icon");
 const hrtCnt=document.getElementById('hrt-count')
@@ -31,11 +31,27 @@ for (const btn of callButtons) {
     alert(` Calling ${serviceName} ${serviceNumber}`);
     let afterCallBalance = available-20;
     callRate.innerText= afterCallBalance;
+
+
     const newElemnt = document.createElement("div")
+    let time = new Date().toLocaleTimeString();
 
     newElemnt.innerHTML = `
-    
+                      <div class="flex justify-between p-3 mt-2 bg-[#fafafa]">
+                    <div>
+                        <h1 class ="font-bold text-lg"> ${serviceName} </h1>
+                        <p>${serviceNumber}</p> 
+                </div>
+                <p>${time}</p>
+            </div>
     `
+    const historyContainer = document.getElementById("add-history")
+    historyContainer.appendChild(newElemnt)
 
   });
 }
+// clear history 
+const clear =document.getElementById("clear-btn")
+clear.addEventListener('click', function(){
+  cleanHis.innerHTML = ""
+})
