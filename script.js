@@ -55,3 +55,17 @@ const clear =document.getElementById("clear-btn")
 clear.addEventListener('click', function(){
   cleanHis.innerHTML = ""
 })
+
+
+// copy section 
+
+const copyBtn = document.getElementsByClassName("copy-btn")
+ const copyCnt = document.getElementById("copy-count")
+for(const btn of copyBtn){
+  btn.addEventListener('click',function(){
+    let count= parseInt(copyCnt.innerText)
+    count+=1;
+    copyCnt.innerText = count;
+    alert("Number has coppyed")
+  })
+}
